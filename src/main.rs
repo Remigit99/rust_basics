@@ -1,6 +1,11 @@
 // use std::io;
 
-mod main2;
+// mod main2;
+// mod main_struct;
+// mod main_exp;
+// mod main_ownership;
+// mod main_vector;
+mod main_string;
 
 
 // enum Direction{
@@ -10,8 +15,15 @@ mod main2;
 //     South,
 // }
 fn main() {
+    // main2::main2();
+    // main_struct::struct_practice();
+    // main_exp::rust_expression();
+    // main_ownership::owner_ship();
+    // main_vector::vector_act();
+    main_string::working_with_strings();
 
-main2::main2();
+
+
 
     // println!("Hello, world!");
     // println!("This is a simple Rust program, by Aderemi Abiodun!");
@@ -60,111 +72,101 @@ main2::main2();
         _ => println!("Invalid blood group"),
     } */
 
-//    let mut count = 1;
+    //    let mut count = 1;
 
-   /*loop {'
-    println!("This is loop number {}", count);
+    /*loop {'
+     println!("This is loop number {}", count);
 
-    if count == 5 {
-        break;
+     if count == 5 {
+         break;
+     }
+     count += 1;
+    }*/
+
+    //   while count <=4 {
+    //       println!("This is loop number {}", count);
+    //         count += 1;
+    //   }
+
+    // let a;
+    // a=5;
+    // println!("{}", a);
+
+    // fn find_sum (p:i32, q:i32) -> i32{
+    //     return p + q;
+    // }
+
+    // println!("sum of 2 and 3 is {}", find_sum(2, 3));
+    // println!("sum of 2 and 3 is {:?}", find_sum(2, 3));
+    // println!("sum of 2 and 3 is {find_sum(2, 3):?}");
+    // println!("sum of 2 and 3 is {find_sum(2, 3)}");
+
+    //loop
+    // let mut a = 0;
+
+    // loop {
+    //     if a==5 {
+    //         break;
+    //     }
+
+    //     a+=1;
+    //     println!("a = {}", a);
+    // }
+
+    /*let mut count = 5;
+
+    loop {
+        println!("count: {}", count );
+           count -= 1;
+        if count == 0 {
+            break;
+        }
     }
-    count += 1;
-   }*/
+    */
 
-//   while count <=4 {
-//       println!("This is loop number {}", count);
-//         count += 1;
-//   }
+    // while a !=5{
+    //     println!("a = {}", a);
+    //     a+=1;
+    // }
 
-// let a;
-// a=5;
-// println!("{}", a);
+    //========* MATCH ====
 
-// fn find_sum (p:i32, q:i32) -> i32{
-//     return p + q;
-// }
+    // let day = "thursdays";
 
-// println!("sum of 2 and 3 is {}", find_sum(2, 3));
-// println!("sum of 2 and 3 is {:?}", find_sum(2, 3));
-// println!("sum of 2 and 3 is {find_sum(2, 3):?}");
-// println!("sum of 2 and 3 is {find_sum(2, 3)}");
+    /*match day {
+        "monday" => println!("Today is {}", day),
+        "tuesday" => println!("Today is {}", day),
+        "wednesday" => println!("Today is {}", day),
+        "thursday" => println!("Today is {}", day),
+        "friday" => println!("Today is {}", day),
+        "saturday" => println!("Today is {}", day),
+        _ =>println!("Something when wrong")
 
+    }*/
 
-//loop
-// let mut a = 0;
+    /*
+    let is_locked = false;
 
-// loop {
-//     if a==5 {
-//         break;
-//     }
+    match is_locked {
+        true => println!("It's true"),
+        false => println!("It's false")
+        // _ => println!("Something went wrong")
+    } */
 
-//     a+=1;
-//     println!("a = {}", a);
-// }
+    //=== ENUM
 
-/*let mut count = 5;
+    // fn wind_way (dir: Direction ) {
+    // let dir = Direction::West;
+    //     match dir {
+    //         Direction::North => println!("The Direction of the wind is North"),
+    //         Direction::East => println!("The Direction of the wind is East"),
+    //         Direction::West => println!("The Direction of the wind is West"),
+    //         Direction::South => println!("The Direction of the wind is South"),
+    //     }
+    // }
 
-loop {
-    println!("count: {}", count );
-       count -= 1;
-    if count == 0 {
-        break;
-    }
-}
-*/
+    // wind_way(EAST);
 
-// while a !=5{
-//     println!("a = {}", a);
-//     a+=1;
-// }
-
-
-//========* MATCH ====
-
-// let day = "thursdays";
-
-/*match day {
-    "monday" => println!("Today is {}", day),
-    "tuesday" => println!("Today is {}", day),
-    "wednesday" => println!("Today is {}", day),
-    "thursday" => println!("Today is {}", day),
-    "friday" => println!("Today is {}", day),
-    "saturday" => println!("Today is {}", day),
-    _ =>println!("Something when wrong")
-
-}*/
-
-/*
-let is_locked = false;
-
-match is_locked {
-    true => println!("It's true"),
-    false => println!("It's false")
-    // _ => println!("Something went wrong")
-} */
-
-
-//=== ENUM
-
-
-// fn wind_way (dir: Direction ) {
-// let dir = Direction::West;
-//     match dir {
-//         Direction::North => println!("The Direction of the wind is North"),
-//         Direction::East => println!("The Direction of the wind is East"),
-//         Direction::West => println!("The Direction of the wind is West"),
-//         Direction::South => println!("The Direction of the wind is South"),
-//     }
-// }
-
-// wind_way(EAST);
-
-
-
-
-
-
-    
     //**======= GUESS THE NUMBER GAME ======= */
     /* use std::io;
 
